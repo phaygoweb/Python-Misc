@@ -1,8 +1,5 @@
 #! /usr/bin/python -tt
 
-import urllib.request
-import os
-
 def main():
   # Root URL to build directory
   rootURL = "http://build.chromium.org/f/chromium/snapshots/chromium-rel-xp/"
@@ -29,4 +26,6 @@ def main():
   print("Chromium updated to latest build.")
   
 if __name__ == '__main__':
+  import urllib.request
+  import os
   main()
