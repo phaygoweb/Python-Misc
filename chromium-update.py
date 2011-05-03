@@ -25,6 +25,7 @@ def main():
   # Notify of a completed install
   print("Chromium updated to latest build.")
   
+  # Log that Chromium was installed
   logging.basicConfig(filename="chromium-installs.log", level=logging.INFO)
   localTime = time.asctime(time.localtime(time.time()))
   logging.info('[' + localTime + '] Chromium ' + str(versionNumber) + ' installed')
