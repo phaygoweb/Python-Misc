@@ -1,4 +1,4 @@
-#! c:/python32/python.exe
+#! /usr/bin/python -tt
 
 import urllib.request
 import os
