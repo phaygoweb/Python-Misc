@@ -17,13 +17,13 @@ def main():
   chromiumInstaller = urllib.request.urlopen(rootURL+str(versionNumber)+"/mini_installer.exe")
 
   # Write out installer file
-  localFile = open("chromium_"+str(versionNumber)+".exe", "w" + fileMode)
+  localFile = open("chromium_latest.exe", "w" + fileMode)
   localFile.write(chromiumInstaller.read())
   localFile.close()
 
   # Install
   print("Installing...")
-  os.system("chromium_"+str(versionNumber)+".exe")
+  os.system("chromium_latest.exe")
 
   # Notify of a completed install
   print("Chromium updated to latest build.")
