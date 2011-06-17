@@ -2,7 +2,7 @@
 
 def main():
   # Root URL to build directory
-  rootURL = "http://build.chromium.org/f/chromium/snapshots/chromium-rel-xp/"
+  rootURL = "http://build.chromium.org/f/chromium/snapshots/Win/"
   
   # Get latest build number
   data = urllib.request.urlopen(rootURL+"LATEST").read()
